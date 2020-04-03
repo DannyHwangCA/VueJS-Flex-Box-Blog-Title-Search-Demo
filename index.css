@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+  
+html, body {
+    position: relative;
+}
+  
+a  {
+    color: #003764;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+  
+a:hover {
+    color: #f0a70c;
+    text-decoration: none;
+}
+  
+#app-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.inner-app-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 0 auto;
+}
+  
+.search-input-container {
+    width: 100%;
+    text-align: center; 
+}
+  
+.search-input {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+  
+.blog-container {
+    width: 48%;
+    position: relative;
+    border: 1px solid #336699;
+    border-radius: 15px;
+    padding: 15px 15px 55px 15px;
+    margin-top: 15px;
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+  
+.blog-container:hover {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+}
+  
+.btn-position {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+  
+@media all and (max-width: 768px){
+    .blog-container {
+      width: 100%;
+    }
+}
