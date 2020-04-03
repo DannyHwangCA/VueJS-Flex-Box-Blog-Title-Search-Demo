@@ -1,0 +1,25 @@
+<div id="app-container">
+    <div class="inner-app-container">
+      <div class="search-input-container">
+        <h2> News Title & Description Search </h2>
+        <input 
+               class="form-control search-input" 
+               placeholder="Search Text"
+               v-model="searchTerm"
+        />
+      </div>
+      <div class="blog-container" 
+           v-for="(item, index) in blogs"
+           :key="index"
+           >
+        <h2>
+          <a :href="item.link">{{ item.title }}</a>
+        </h2>
+        <p>{{ item.date }}</p>
+        <p>{{ item.description }}</p>
+        <div class="btn-position">
+          <a :href="item.link" class="btn btn-outline-dark">Read more <i class="fas fa-external-link-alt"></i></a> 
+        </div>
+      </div>
+    </div>
+</div>
